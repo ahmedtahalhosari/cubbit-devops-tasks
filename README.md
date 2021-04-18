@@ -23,3 +23,9 @@ kubectl apply -f ./
 Check the application is running successfully on localhost:30000
 
 
+## Task 3
+
+ Jenkinsfile add with multi-stage pipeline to build,push image and deploy on kubernetes namespace.
+
+
+
