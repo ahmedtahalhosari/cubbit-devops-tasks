@@ -1,37 +1,25 @@
 # React Image Compressor
 
-## Overview
 
-A simple image compressor built with [react](https://reactjs.org/) and [browser-image-compression](https://www.npmjs.com/package/browser-image-compression).
+## Task 1
 
-## Functionalities
-
-- Compress Image By Reducing Resolution and Size
-- Offline Compression
-
-## Built With
-
-- ReactJS
-- React Bootstrap
-- Browser Image Compression
-
-## Development
-
-1. Clone the repository and change directory.
+1. To run the application using docker compose 
 
 ```
-git clone https://github.com/RaulB-masai/react-image-compressor.git
-cd react-image-compressor
+docker-compose up
 ```
+then check that the application is running on localhost:3000
 
-2. Install npm dependencies
+## Task 2
 
-```
-npm install
-```
+ Just make sure that the image is already builded from the dockerfile with name react-image-compressor_frontend:latest
 
-3. Run the app locally.
+then go to the directory kubernetes deployment and run the following command line 
 
 ```
-npm start
+kubectl apply -f ./
 ```
+
+Check the application is running successfully on localhost:30000
+
+

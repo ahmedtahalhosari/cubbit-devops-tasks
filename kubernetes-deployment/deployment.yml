@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: image-compressor
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: image-compressor
+  template:
+    metadata:
+      labels:
+        app: image-compressor
+    spec:
+      containers:
+        - name: image-compressor
+          image: react-image-compressor_frontend:latest
+          imagePullPolicy: Never
+          ports:
+            - containerPort: 3000
